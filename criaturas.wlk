@@ -1,7 +1,7 @@
 import roles.*
 
 class Criatura{
-    const property poderMagico
+    var property poderMagico
     var rol
     method poderOfensivo() = poderMagico * 10 + rol.poderExtraQueDa()
     method esFormidable() = self.esAstuta() || self.esExtraordinaria()
