@@ -2,14 +2,12 @@ import roles.*
 
 class Criatura{
     const property poderMagico
-    const rol
+    var rol
     method poderOfensivo() = poderMagico * 10 + rol.poderExtraQueDa()
     method esFormidable() = self.esAstuta() || self.esExtraordinaria()
     method esAstuta()
     method esExtraordinaria()
-    method cambiarDeRol(){
-        if(rol === guardian)
-    }
+    method cambiarDeRol() {rol = rol.cambio()}
 }
 
 class Duende inherits Criatura{
